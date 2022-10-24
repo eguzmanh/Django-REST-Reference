@@ -17,7 +17,8 @@ from django.contrib import admin
 from django.urls import path
 from drinks import views
 
+# All routes will be defined throuugh the urls.py file
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('drinks/', views.drink_list)
+    path('drinks/', views.drink_list), # uses the drink_list function from the views.py file
 ]
